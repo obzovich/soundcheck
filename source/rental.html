@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Sound Check Production</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+ 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+ 	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,400i,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header header--b-line">
+		<div class="header__logo yellow-bg">
+			<a href="#" class="header__logo--link"><img src="img/logo.svg" alt="Sound Check"></a>
+		</div>
+		<div class="header__social">
+			<a href="#" class="header__social--link"><img src="img/fb.svg" alt="Facebook"></a>
+			<a href="#" class="header__social--link"><img src="img/vk.svg" alt="Vk"></a>
+			<a href="#" class="header__social--link"><img src="img/inst.svg" alt="Instagram"></a>
+		</div>
+		<ul class="header__menu">
+			<li class="header__menu--item"><a href="#" class="header__menu--item--link">О нас</a></li>
+			<li class="header__menu--item"><a href="#" class="header__menu--item--link">Каталог</a></li>
+			<li class="header__menu--item"><a href="#" class="header__menu--item--link">Портфолио</a></li>
+			<li class="header__menu--item"><a href="#" class="header__menu--item--link">Заявка</a></li>
+		</ul>
+		<div class="header__search-input">
+			<input type="text" class="catalog__filters__search">
+			<span class="header__search-input-close"></span>
+		</div>
+		<a class="header__basket" href="#">
+			<img src="img/basket.svg" alt="Корзина" style="max-height:25px">
+			<div class="header__basket--number">
+			</div>
+		</a>
+		<a class="header__search" href="#">
+			<img src="img/search.svg" alt="Найти">
+		</a>
+		<a class="header__phone" href="tel:+79261627934">
+			+7 (926) 162-79-34
+		</a>
+		<div class="hamburger-menu">
+			<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+			  <span></span>
+			</label>
+		
+			<ul class="menu__box">
+			  	<li><a class="menu__item" href="#">О нас</a></li>
+				<li><a class="menu__item" href="#">Каталог</a></li>
+				<li><a class="menu__item" href="#">Портфолио</a></li>
+				<li><a class="menu__item" href="#">Заявка</a></li>
+				<li><a class="menu__item menu__item-tel" href="tel:+79261627934">+7 (926) 162-79-34</a></li>
+
+				<li class="menu-social-wrap"><a href="#" class="header__social--link"><img src="img/fb.svg" alt="Facebook"></a>
+				<a href="#" class="header__social--link"><img src="img/vk.svg" alt="Vk"></a>
+				<a href="#" class="header__social--link"><img src="img/inst.svg" alt="Instagram"></a>
+				</li>
+				<li class="menu--search">
+					<form>
+						<div class="catalog__filters__search-wrap">
+							<input type="text" class="catalog__filters__search">
+						</div>
+					</form>
+				</li>
+				<li><a class="menu__item" href="#"><img src="img/basket.svg" alt="Корзина" style="max-height:25px"></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<section class="rental">
+		<div class="content-wrap">
+			<h2 class="title rental__title">
+				Заявка на аренду
+			</h2>
+			<form action="" class="rental__form">
+				<div class="rental__form--contacts">
+					<input required type="text" value="Имя" class="rental__form--contacts--name" onfocus="if (this.value == 'Имя') {this.value=''}" onBlur="if (this.value == '') {this.value='Имя'}">
+					<input required type="text" value="Email" class="rental__form--contacts--email" onfocus="if (this.value == 'Email') {this.value=''}" onBlur="if (this.value == '') {this.value='Email'}" pattern="\+[0-9]{1,4}[0-9]{1,10}|(.*)@(.*)\.[a-z]{2,5}">
+					<input type="text" value="Телефон" class="rental__form--contacts--phone" onfocus="if (this.value == 'Телефон') {this.value=''}" onBlur="if (this.value == '') {this.value='Телефон'}" pattern="\+[0-9]{1,4}[0-9]{1,10}|(.*)@(.*)\.{2,5}">
+				</div>
+				<!-- <div class="rental__form--message">
+					<textarea name="rental-form-message" id="rental-form-message" cols="30" rows="10" style="resize: none;" placeholder="Сообщение" onfocus="if (this.placeholder == 'Сообщение') {this.placeholder=''}" onBlur="if (this.placeholder == '') {this.placeholder='Сообщение'}"></textarea>
+				</div> -->
+			</form>
+			<h4 class="rental__subtitle">
+				Срок аренды
+			</h4>
+			<div>
+				<div class="rental-dates">
+
+					
+
+
+
+					<div class="rental-dates-start">
+						<span>Дата начала аренды</span>
+						<form>
+							<input class="rental-calendar" type="text" id="datepicker" value="выберите дату">
+						</form>
+					</div>
+					<div class="rental-dates-time_start">
+						<span>Время начала аренды</span>
+						<form>
+							<input class="rental-time" type="time" name="cron" value="16:20" min="00:00" max="23:59">
+						</form>
+					</div>
+					<div class="rental-dates-end">
+						<span>Дата окончания аренды</span>
+						<form>
+							<input class="rental-calendar" type="text" id="datepicker2" value="выберите дату">
+						</form>
+					</div>
+					<div class="rental-dates-time_end">
+						<span>Время окончания аренды</span>
+						<form>
+							<input class="rental-time" type="time" name="cron" value="16:20" min="00:00" max="23:59">
+						</form>
+					</div>
+				</div>
+			</div>
+			<h4 class="rental__subtitle">
+				Адрес доставки
+			</h4>
+			<div class="basket__delivery">
+
+					<form action="#" class="radio_delivery_form">
+					  <p class="radio_delivery_form--itm">
+					    <input type="radio" id="moscow" name="radio-group" checked>
+					    <label for="moscow">Москва (2500 &#8381;)</label>
+					  </p>
+					  <p class="radio_delivery_form--itm">
+					    <input type="radio" id="moscow_district" name="radio-group">
+					    <label for="moscow_district">Московская область (5000 &#8381;)</label>
+					  </p>
+					</form>
+
+				</div>
+			<div class="rental__adds rental__form">
+				<input type="text" value="Введите ваш адрес" onfocus="if (this.value == 'Введите ваш адрес') {this.value=''}" onBlur="if (this.value == '') {this.value='Введите ваш адрес'}">
+			</div>
+
+			<div class="rental__map">
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4c21eb32b01d38e56b5f510a790da7cd2b9afae0083ee697a0476fb30ce80146&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+			</div>
+
+			<!-- <h4 class="rental__subtitle">
+				Дополнительные услуги
+			</h4>
+
+				<form action="#" class="radio_services_form">
+					<p class="radio_services_form--itm">
+						<input type="radio" id="montage" name="radio-group" checked>
+						<label for="montage">Монтаж оборудования</label>
+					</p>
+					<p class="radio_services_form--itm">
+						<input type="radio" id="demontage" name="radio-group">
+						<label for="demontage">Демонтаж оборудования</label>
+					</p>
+				</form>
+
+				<div class="rental-dates-start radio_services_dates-start">
+					<span class="radio_services_caption">Дата начала</span>
+					<form>
+						<input class="rental-calendar" required type="date" name="calendar">
+					</form>
+				</div>
+				<div class="rental-dates-time_start radio_services_time-start">
+					<span class="radio_services_caption">Время начала</span>
+					<form>
+						<input class="rental-time" type="time" name="cron" value="16:20" min="00:00" max="23:59">
+					</form>
+				</div> -->
+
+
+				<!-- <ul class="basket__services-list">
+					<li class="checkbox__item"><input type="checkbox" id="montage"><label for="montage">Монтаж оборудования</label></li>
+				</ul>
+				<form class="rental__form montage--form">
+					<input class="rental-services" required type="text" value="Например: 1 апреля с 11:00" onfocus="if (this.value == 'Например: 1 апреля с 11:00') {this.value=''}" onBlur="if (this.value == '') {this.value='Например: 1 апреля с 11:00'}">
+				</form>
+
+
+				<ul class="basket__services-list">
+					<li class="checkbox__item"><input type="checkbox" id="demontage"><label for="demontage">Демонтаж оборудования</label></li>
+				</ul>
+				<form class="rental__form demontage--form">
+					<input class="rental-services" required type="text" value="Например: 1 апреля с 11:00" onfocus="if (this.value == 'Например: 1 апреля с 11:00') {this.value=''}" onBlur="if (this.value == '') {this.value='Например: 1 апреля с 11:00'}">
+				</form> -->
+
+
+
+			<h4 class="rental__subtitle">
+				Сопровождение
+			</h4>
+			<ul class="rental__target">
+				<li class="checkbox__item rental__target--item"><input type="checkbox" id="rental__target--item--light"><label for="rental__target--item--light">Монтаж/Демонтаж</label></li>
+				<li class="checkbox__item rental__target--item"><input type="radio"><input type="checkbox" id="rental__target--item--sound"><label for="rental__target--item--sound">Светорежиссер</label></li>
+				<li class="checkbox__item rental__target--item"><input type="radio"><input type="radio"><input type="checkbox" id="rental__target--item--dj"><label for="rental__target--item--dj">Звукорежиссер</label></li>
+				<li class="checkbox__item rental__target--item"><input type="radio"><input type="radio"><input type="checkbox" id="rental__target--item--baklan"><label for="rental__target--item--baklan">Видеоинженер</label></li>
+				<li class="checkbox__item rental__target--item"><input type="radio"><input type="radio"><input type="checkbox" id="rental__target--item--scene"><label for="rental__target--item--scene">Техник</label></li>
+				<li class="checkbox__item rental__target--item"><input type="radio"><input type="radio"><input type="checkbox" id="rental__target--item--decoration"><label for="rental__target--item--decoration">DJ</label></li>
+				<li class="checkbox__item rental__target--item"><input type="radio"><input type="radio"><input type="checkbox" id="rental__target--item--complex"><label for="rental__target--item--complex">Комплексная поддержка мероприятия</label></li>
+			</ul>
+
+
+			<div class="rental-total-sum">
+				<!-- Общая сумма <span class="rental-total-sum--number">18 000 P</span> -->
+			</div>
+
+
+			<div class="rental__personal">
+			<input type="checkbox" id="personal_license" checked><label for="personal_license">Отправляя заявку, вы даете согласие на обработку персональных данных</label>
+			</div>
+			<div class="rental__buttons">
+				<button class="button rental__button rental__button--specification">Прикрепить ТЗ</button>
+				<button class="button rental__button">Отправить заявку</button>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__wrap">
+			<div class="footer__left">
+				<div class="footer__left--wrap">
+					<h3 class="footer__title footer__title--left">
+						Оставьте заявку on-line
+					</h3>
+					<form action="" class="footer__form">
+						<div class="footer__form--row">
+							<input type="text" value="Имя" class="footer__form__input footer__form__input--name" onfocus="if (this.value == 'Имя') {this.value=''}" onBlur="if (this.value == '') {this.value='Имя'}">
+							<input type="text" value="Телефон" class="footer__form__input footer__form__input--phone" onfocus="if (this.value == 'Телефон') {this.value=''}" onBlur="if (this.value == '') {this.value='Телефон'}">
+						</div>
+						<textarea name="footer-message" id="footer-message" cols="30" rows="10" class="footer__form__input footer__form__input--message" placeholder="Вопрос" onfocus="if (this.placeholder == 'Вопрос') {this.placeholder=''}" onBlur="if (this.placeholder == '') {this.placeholder='Вопрос'}"></textarea>
+						<button class="button footer__form--button">
+							Отправить заявку
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer__right">
+				<h3 class="footer__title footer__title--right">
+					Контакты
+				</h3>
+				<p class="footer__right--text">
+					<a href="tel:+79261627934" class="footer__right--text--link">+7 (926) 162-79-34</a><br>
+					<a href="mailto:info@soundcheck.moscow" class="footer__right--text--link">info@soundcheck.moscow</a>
+				</p>
+				<p class="footer__right--text">
+					Режим работы с 9:00 до 21:00 по МСК<br>
+					Поддержка корпоративных клиентов 24/7
+				</p>
+				<div class="footer__right--social">
+					<a href="#" class="footer__right--social--link"><img src="img/fb.svg" alt="Facebook"></a>
+					<a href="#" class="footer__right--social--link"><img src="img/vk.svg" alt="Vk"></a>
+					<a href="#" class="footer__right--social--link"><img src="img/inst.svg" alt="Instagram"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	
+
+</body>
+</html>
